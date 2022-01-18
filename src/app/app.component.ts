@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.myForm = this.fb.group({
-      name: ['Sammy', Validators.required],
+      name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       message: ['', [Validators.required, Validators.minLength(15)]],
     });
